@@ -42,7 +42,7 @@ const projects = [
     demo: "#",
     learn:
       "Me permitió trabajar diseño responsive, componentes reutilizables y una mejor presentación profesional de mis proyectos.",
-    images: ["/projects/Portfolio.png"],
+    images: ["/projects/Portfolio.png"], 
   },
 ];
 
