@@ -38,7 +38,7 @@ const projects = [
     description:
       "Sitio web responsive para presentar mi perfil profesional, tecnologías, proyectos y medios de contacto.",
     tech: ["React", "Tailwind", "Vercel"],
-    github: "https://github.com/TU-USUARIO/TU-REPO-PORTFOLIO",
+    github: "https://github.com/Elias-Raimundo/Portfolio-Elias",
     demo: "#",
     learn:
       "Me permitió trabajar diseño responsive, componentes reutilizables y una mejor presentación profesional de mis proyectos.",
