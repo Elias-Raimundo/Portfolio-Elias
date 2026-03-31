@@ -44,7 +44,7 @@ const projects = [
       "Me permitió trabajar diseño responsive, componentes reutilizables y una mejor presentación profesional de mis proyectos.",
     images: ["/projects/Portfolio.png"], 
   },
-];
+]; 
 
 function ImageModal({ images, current, title, onClose, onPrev, onNext, onGoTo }) {
   useEffect(() => {
