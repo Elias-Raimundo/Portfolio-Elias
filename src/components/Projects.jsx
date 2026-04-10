@@ -34,15 +34,15 @@ const projects = [
     images: ["/projects/Morticia1.png", "/projects/Morticia2.png"],
   },
   {
-    title: "Portfolio personal",
+    title: "Beat-AI",
     description:
-      "Sitio web responsive para presentar mi perfil profesional, tecnologías, proyectos y medios de contacto.",
-    tech: ["React", "Tailwind", "Vercel"],
-    github: "https://github.com/Elias-Raimundo/Portfolio-Elias",
+      "Aplicacion para analisis de electrocardiogramas utilizando inteligencia artificial, con el objetivo de dar un diagnostico al paciente",
+    tech: ["Python", "Flask", "SQLite", "React", "JavaScript", ""],
+    github: "https://github.com/SantiagoBuffa/BeatAI.git",
     demo: "#",
     learn:
-      "Me permitió trabajar diseño responsive, componentes reutilizables y una mejor presentación profesional de mis proyectos.",
-    images: ["/projects/Portfolio.png"], 
+      "Desarrollé el backend en Python con Flask y SQLite para la base de datos, donde implementé la conexión con la base de datos y la lógica para procesar los electrocardiogramas utilizando un modelo de inteligencia artificial.",
+    images: ["/projects/BeatAI.png"], 
   },
 ]; 
 

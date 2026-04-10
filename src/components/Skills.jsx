@@ -5,7 +5,7 @@ const groups = [
   },
   {
     title: "Backend",
-    items: ["Java", "Ruby", "Sinatra", "Python", "TypeScript"],
+    items: ["Java", "Ruby", "Python", "TypeScript", "Node.js", "APIs REST",""],
   },
   {
     title: "Bases de datos",
@@ -13,7 +13,7 @@ const groups = [
   },
   {
     title: "Herramientas",
-    items: ["Git", "GitHub", "VS Code", "Vercel", "SupaBase"],
+    items: ["Git", "GitHub", "VS Code", "Vercel", "SupaBase", "Render"],
   },
 ];
 
