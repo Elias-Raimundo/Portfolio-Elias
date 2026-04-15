@@ -43,7 +43,7 @@ function Hero() {
             </a>
 
             <a
-                href="/Curriculum.pdf"
+                href="/CVElias.pdf"
                 download
                 className="rounded-xl border border-cyan-400/30 px-6 py-3 font-semibold text-cyan-400 transition hover:bg-cyan-400 hover:text-slate-950"
             >
@@ -62,7 +62,7 @@ function Hero() {
           <p className="text-sm text-slate-400">Stack principal</p>
 
           <div className="mt-6 flex flex-wrap gap-3">
-            {["React", "Java", "C", "SQL", "Git", "JavaScript"].map((tech) => (
+            {["React", "Java", "Node.js", "SQL", "GitHub", "JavaScript"].map((tech) => (
               <span
                 key={tech}
                 className="rounded-full border border-cyan-400/20 bg-cyan-400/10 px-4 py-2 text-sm text-cyan-300"

@@ -5,7 +5,7 @@ const groups = [
   },
   {
     title: "Backend",
-    items: ["Java", "Ruby", "Python", "TypeScript", "Node.js", "APIs REST",""],
+    items: ["Java", "Ruby", "Python", "TypeScript", "Node.js", "APIs REST"],
   },
   {
     title: "Bases de datos",
