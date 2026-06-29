@@ -1,11 +1,20 @@
 const groups = [
   {
     title: "Frontend",
-    items: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS", "TypeScript"],
+    items: ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Tailwind CSS", "TypeScript"],
   },
   {
     title: "Backend",
-    items: ["Java", "Ruby", "Python", "TypeScript", "Node.js", "APIs REST"],
+    items: [
+      "Java",
+      "Spring Boot",
+      "Node.js",
+      "Ruby",
+      "Python",
+      "Flask",
+      "REST APIs",
+      "JWT",
+    ],
   },
   {
     title: "Bases de datos",

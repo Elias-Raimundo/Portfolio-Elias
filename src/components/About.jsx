@@ -12,21 +12,22 @@ function About() {
       </div>
 
       <div className="grid gap-6 md:grid-cols-2">
-        <div className="rounded-3xl border border-white/5 p-8 shandow-xl blackdrop-blur-sm">
+        <div className="rounded-3xl border border-white/5 p-8 shadow-xl backdrop-blur-sm">
           <p className="leading-7 text-slate-300">
-            Soy Analista en Sistemas y me interesa el desarrollo de software,
-            especialmente la creación de aplicaciones web y la resolución de
-            problemas mediante código. Me gusta aprender nuevas tecnologías y
-            seguir mejorando mis habilidades técnicas.
+            Soy Analista en Sistemas y desarrollador Full Stack. Disfruto
+            diseñar y desarrollar aplicaciones web, integrando frontend, backend
+            y bases de datos para construir soluciones completas y escalables.
+            Me gusta aprender nuevas tecnologías y seguir mejorando mis
+            habilidades técnicas.
           </p>
         </div>
 
-        <div className="rounded-3xl border border-white/5 p-8 shandow-xl blackdrop-blur-sm">
+        <div className="rounded-3xl border border-white/5 p-8 shadow-xl backdrop-blur-sm">
           <p className="leading-7 text-slate-300">
-            Disfruto trabajar con una lógica ordenada, escribir código claro y
-            construir proyectos que me permitan aplicar lo aprendido. Busco
-            oportunidades donde pueda aportar valor y seguir creciendo
-            profesionalmente dentro del área IT.
+            A lo largo de distintos proyectos trabajé con tecnologías como Java,
+            Spring Boot, Angular, React, Node.js, Ruby, Python y PostgreSQL.
+            Busco escribir código claro, trabajar con lógica ordenada y seguir
+            creciendo profesionalmente dentro del desarrollo de software.
           </p>
         </div>
       </div>

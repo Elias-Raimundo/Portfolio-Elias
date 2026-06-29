@@ -3,16 +3,49 @@ import { createPortal } from "react-dom";
 
 const projects = [
   {
-    title: "Vault - Virtual Wallet",
-    description:
-      "Billetera virtual que permite ingresar, transferir y retirar dinero, crear reservas y consultar la actividad de la cuenta.",
-    tech: ["Ruby", "Sinatra", "ActiveRecord", "SQLite", "Docker", "HTML", "CSS"],
-    github: "https://github.com/Elias-Raimundo/Vault-app",
-    demo: "#",
-    learn:
-      "Trabajé lógica de negocio, persistencia de datos, operaciones financieras y organización de una aplicación web con Ruby.",
-    images: ["/projects/Vault.png"],
-  },
+      title: "Sistema de Gestión para Bodegas",
+      description:
+        "Sistema de gestión para bodegas que permite administrar productos, ventas, clientes y configuración del negocio mediante una interfaz web moderna y segura.",
+
+      tech: [
+        "Spring Boot",
+        "Java",
+        "Angular",
+        "PostgreSQL",
+        "JWT",
+        "Supabase",
+        "Render",
+      ],
+
+      githubFrontend:
+        "https://github.com/Elias-Raimundo/bodega-frontend",
+
+      githubBackend:
+        "https://github.com/Elias-Raimundo/sistema-bodegas",
+
+      demo:
+        "https://bodega-frontend-y2jo.onrender.com/login",
+
+      demoCredentials: {
+        email: "demo@bodega.com",
+        password: "demo123",
+      },
+
+      learn:
+        "Desarrollé una arquitectura full stack utilizando Spring Boot y Angular, implementando autenticación JWT, integración con PostgreSQL, despliegue en Render y migración de la base de datos a Supabase.",
+
+      features: [
+        "🌐 Demo Online",
+        "🔑 Usuario Demo",
+        "📱 Responsive",
+        "☁️ Deploy en Render",
+      ],
+
+      images: [
+        "/projects/Bodega1.png",
+        "/projects/Bodega2.png",
+      ],
+    },
   {
     title: "Morticia SAS",
     description:
@@ -30,20 +63,33 @@ const projects = [
     github: "https://github.com/Elias-Raimundo/Morticia-Sas",
     demo: "#",
     learn:
-      "Implementé funcionalidades para clientes y administradores, integrando frontend y backend, manejando datos en una base relacional y desplegando servicios en la nube.",
+        "Desarrollé funcionalidades para clientes y administradores integrando frontend y backend, generación de pedidos en PDF, despliegue en la nube e integración con PostgreSQL mediante Prisma ORM.",
     images: ["/projects/Morticia1.png", "/projects/Morticia2.png"],
   },
   {
+    title: "Vault - Virtual Wallet",
+    description:
+      "Billetera virtual que permite ingresar, transferir y retirar dinero, crear reservas y consultar la actividad de la cuenta.",
+    tech: ["Ruby", "Sinatra", "ActiveRecord", "SQLite", "Docker", "HTML", "CSS"],
+    github: "https://github.com/Elias-Raimundo/Vault-app",
+    demo: "#",
+    learn:
+      "Implementé operaciones financieras, autenticación de usuarios, persistencia de datos y una arquitectura MVC utilizando Ruby, Sinatra y ActiveRecord.",
+    images: ["/projects/Vault.png"],
+  },
+  
+  {
     title: "Beat-AI",
     description:
-      "Aplicacion para analisis de electrocardiogramas utilizando inteligencia artificial, con el objetivo de dar un diagnostico al paciente",
-    tech: ["Python", "Flask", "SQLite", "React", "JavaScript", ""],
+      "Aplicación web para el análisis de electrocardiogramas mediante inteligencia artificial, orientada a asistir en el diagnóstico clínico.",
+    tech: ["Python", "Flask", "SQLite", "React", "JavaScript"],
     github: "https://github.com/SantiagoBuffa/BeatAI.git",
     demo: "#",
     learn:
-      "Desarrollé el backend en Python con Flask y SQLite para la base de datos, donde implementé la conexión con la base de datos y la lógica para procesar los electrocardiogramas utilizando un modelo de inteligencia artificial.",
+      "Desarrollé el backend utilizando Flask y SQLite, implementando la lógica de negocio, la persistencia de datos y la integración con un modelo de inteligencia artificial para el análisis de electrocardiogramas.",
     images: ["/projects/BeatAI.png"], 
   },
+  
 ]; 
 
 function ImageModal({ images, current, title, onClose, onPrev, onNext, onGoTo }) {
@@ -277,6 +323,22 @@ function Projects() {
             <p className="mt-3 text-xs leading-5 text-slate-500">
               {project.learn}
             </p>
+            
+            {project.demoCredentials && (
+              <div className="mt-4 rounded-xl border border-cyan-400/20 bg-cyan-400/5 p-3">
+                <p className="text-xs font-semibold text-cyan-400">
+                  Usuario demo
+                </p>
+
+                <p className="mt-2 text-xs text-slate-300">
+                  <strong>Email:</strong> {project.demoCredentials.email}
+                </p>
+
+                <p className="text-xs text-slate-300">
+                  <strong>Contraseña:</strong> {project.demoCredentials.password}
+                </p>
+              </div>
+            )}
 
             <div className="mt-4 flex flex-wrap gap-2">
               {project.tech.map((item) => (
@@ -289,17 +351,41 @@ function Projects() {
               ))}
             </div>
 
-            <div className="mt-6 flex gap-3">
-              <a
-                href={project.github}
-                target="_blank"
-                rel="noreferrer"
-                className="rounded-lg border border-white/20 px-4 py-2 text-sm transition hover:border-cyan-400 hover:text-cyan-400"
-              >
-                Código
-              </a>
+            <div className="mt-6 flex flex-wrap gap-3">
+              {project.githubFrontend && (
+                <a
+                  href={project.githubFrontend}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-lg border border-white/20 px-4 py-2 text-sm transition hover:border-cyan-400 hover:text-cyan-400"
+                >
+                  Frontend
+                </a>
+              )}
 
-              {project.demo !== "#" && (
+              {project.githubBackend && (
+                <a
+                  href={project.githubBackend}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-lg border border-white/20 px-4 py-2 text-sm transition hover:border-cyan-400 hover:text-cyan-400"
+                >
+                  Backend
+                </a>
+              )}
+
+              {project.github && (
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-lg border border-white/20 px-4 py-2 text-sm transition hover:border-cyan-400 hover:text-cyan-400"
+                >
+                  Código
+                </a>
+              )}
+
+              {project.demo && project.demo !== "#" && (
                 <a
                   href={project.demo}
                   target="_blank"

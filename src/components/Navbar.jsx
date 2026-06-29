@@ -6,7 +6,7 @@ function Navbar() {
           href="#inicio"
           className="text-xl font-black tracking-wide text-white transition hover:text-cyan-400"
         >
-          Elias<span className="text-cyan-400">.dev</span>
+          Elias<span className="text-cyan-400"> Raimundo</span>
         </a>
 
         <ul className="hidden items-center gap-6 text-sm text-slate-300 md:flex">

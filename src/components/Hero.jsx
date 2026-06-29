@@ -18,7 +18,7 @@ function Hero() {
           </h1>
 
           <h2 className="mt-4 text-xl text-slate-300 md:text-2xl">
-            Analista en Sistemas y desarrollador en formación
+            Desarrollador Full Stack | Analista en Sistemas
           </h2>
 
           <p className="mt-6 max-w-xl text-base leading-7 text-slate-400">
@@ -43,7 +43,7 @@ function Hero() {
             </a>
 
             <a
-                href="/CVElias.pdf"
+                href="/CV_Elias_Raimundo.pdf"
                 download
                 className="rounded-xl border border-cyan-400/30 px-6 py-3 font-semibold text-cyan-400 transition hover:bg-cyan-400 hover:text-slate-950"
             >
@@ -88,7 +88,7 @@ function Hero() {
             <div className="rounded-3xl border border-white/5 p-4 shadow-xl backdrop-blur-sm">
               <p className="text-sm text-slate-500">Objetivo</p>
               <p className="mt-1 font-medium">
-                Conseguir experiencia real y crecer como desarrollador
+                Crear soluciones reales y seguir creciendo profesionalmente
               </p>
             </div>
           </div>

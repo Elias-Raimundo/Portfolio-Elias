@@ -1,7 +1,5 @@
 import { useState } from "react";
 
-
-
 function Contact() {
   const [sent, setSent] = useState(false);
 
@@ -38,10 +36,10 @@ function Contact() {
       <div className="grid gap-8 md:grid-cols-2">
         <div className="rounded-3xl border border-white/5 p-8 shadow-xl backdrop-blur-sm">
           <p className="leading-7 text-slate-300">
-            Estoy buscando oportunidades para seguir creciendo como
-            desarrollador, sumar experiencia y participar en proyectos donde
-            pueda aportar valor. Podés contactarme por mail o encontrarme en mis
-            perfiles profesionales.
+            Actualmente me encuentro en búsqueda de nuevas oportunidades como
+            Desarrollador Full Stack. Me interesa participar en proyectos donde
+            pueda aportar soluciones, seguir aprendiendo y trabajar con tecnologías
+            modernas para desarrollar aplicaciones web de calidad.
           </p>
 
           <div className="mt-6 space-y-3 text-slate-300">
